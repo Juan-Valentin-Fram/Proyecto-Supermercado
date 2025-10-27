@@ -5,103 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
 <body>
-    <header>
-        <section class="container-header">
-            <a href="../index.html">
-                <img src="../assets/Logo.png" alt="Imagen de Click&Shop" class="logo">
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="encabezado">
+        <section class="encabezado__contenido">
+            <a href="../index.html" class="encabezado__marca">
+                <img src="../assets/Logo.png" alt="Imagen de Click&Shop" class="encabezado__logo">
             </a>
-            <h1 class="titulos">Información</h1>
-            <nav>
-                <div class="ventanas">
-                    <ul>
-                        <li class="link">
-                            <a href="../index.html" style="text-decoration: none;">Inicio</a>
-                        </li>
-                        <li class="link">
-                            <a href="./informacion.html " style="text-decoration: none;">Información de
-                                nosotros</a>
-                        </li>
-                        <li class="link">
-                            <a href="./catalogo.html" style="text-decoration: none;">Catálogo</a>
-                        </li>
-                        <li class="link">
-                            <a href="./carrito.html" style="text-decoration: none;">Carrito</a>
-                        </li>
-                        <li class="link">
-                            <a href="./recetas.html" style="text-decoration: none;">Recetas</a>
-                        </li>
-                        <li class="link">
-                            <a href="./contacto.html" style="text-decoration: none;">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <!-- Título de la página -->
+            <h1 class="encabezado__titulo">Información</h1>
+
+            <!-- Navegación principal -->
+            <nav class="navegacion-principal">
+                <ul class="navegacion-principal__lista">
+                    <li class="navegacion-principal__item">
+                        <a href="../index.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Inicio</a>
+                    </li>
+                    <li class="navegacion-principal__item navegacion-principal__item--activo">
+                        <a href="./informacion.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Información de
+                            nosotros</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./catalogo.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Catálogo</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./carrito.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Carrito</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./recetas.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Recetas</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./contacto.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Contacto</a>
+                    </li>
+                </ul>
             </nav>
         </section>
     </header>
 
-    <main>
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main class="principal">
+
         <!--Información del Supermercado-->
-        <h3>🌟 Sobre Nosotros - Click&Shop</h3>
-        <p>Detrás de Click&Shop hay una historia personal y un sueño que fue tomando forma con el tiempo. Mi nombre es
-            Juan Fram y siempre me apasionó la idea de emprender proyectos que sumen valor real a la vida de las
-            personas. Observando la rutina diaria, me di cuenta de que muchas veces las compras del supermercado
-            terminan siendo una tarea pesada, que nos quita tiempo y energía que podríamos dedicar a lo que realmente
-            nos hace felices: estar con nuestra familia, compartir con amigos o simplemente descansar.</p>
-        <p>Fue entonces cuando decidí dar un paso adelante y crear un espacio diferente: un supermercado online pensado
-            para simplificar la vida cotidiana. Así nació Click&Shop, con el propósito de transformar una obligación en
-            una experiencia positiva, rápida y agradable.</p>
-        <p>Pero Click&Shop no es solo una tienda virtual: es un proyecto construido desde el corazón, con la convicción
-            de que hacer las cosas más fáciles también es una forma de dar felicidad. Cada producto que ofrecemos, cada
-            entrega que organizamos, está pensada para que la gente no solo reciba lo que necesita, sino que también
-            sienta que su tiempo y su bienestar son valorados.</p>
-        <p>Nuestro compromiso es combinar tecnología, calidad y cercanía humana. Queremos que cada cliente pueda acceder
-            a una amplia variedad de productos, con precios justos y promociones exclusivas, pero además que viva una
-            experiencia de compra segura, confiable y simple. Porque creemos que la confianza se gana con hechos:
-            entregando a tiempo, cumpliendo con lo prometido y cuidando cada detalle.</p>
-        <p>En Click&Shop nos mueve un sueño: que cada pedido llegue acompañado de la satisfacción de haber elegido un
-            servicio que facilita la vida. Nuestra meta es estar presentes en esos pequeños grandes momentos, siendo
-            parte del día a día de las familias y contribuyendo a que las rutinas sean más llevaderas.</p>
-        <p>✨ Click&Shop: porque comprar puede ser fácil, rápido… y también una experiencia que regala sonrisas.</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52990.72059106094!2d-60.60268105408957!3d-33.891713182217046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b84aad3ef60a31%3A0x481ac3277962e9c5!2sPergamino%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1758831870890!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <br>
-        <section class="whatsapp">
-            <a href="https://wa.me/5492477454622" target="_blank">
-                <img src="../assets/whatsapp.png" alt="WhatsApp" class="imagenw">
+        <Section class="informacion-tienda">
+            <h3 class="informacion-tienda__titulo">🌟 Sobre Nosotros - Click&Shop</h3>
+            <p class="informacion-tienda__parrafo">Detrás de Click&Shop hay una historia personal y un sueño que fue
+                tomando forma con el tiempo. Mi nombre es
+                Juan Fram y siempre me apasionó la idea de emprender proyectos que sumen valor real a la vida de las
+                personas. Observando la rutina diaria, me di cuenta de que muchas veces las compras del supermercado
+                terminan siendo una tarea pesada, que nos quita tiempo y energía que podríamos dedicar a lo que
+                realmente
+                nos hace felices: estar con nuestra familia, compartir con amigos o simplemente descansar.</p>
+            <p class="informacion-tienda__parrafo">Fue entonces cuando decidí dar un paso adelante y crear un espacio
+                diferente: un supermercado online pensado
+                para simplificar la vida cotidiana. Así nació Click&Shop, con el propósito de transformar una obligación
+                en
+                una experiencia positiva, rápida y agradable.</p>
+            <p class="informacion-tienda__parrafo">Pero Click&Shop no es solo una tienda virtual: es un proyecto
+                construido desde el corazón, con la convicción
+                de que hacer las cosas más fáciles también es una forma de dar felicidad. Cada producto que ofrecemos,
+                cada
+                entrega que organizamos, está pensada para que la gente no solo reciba lo que necesita, sino que también
+                sienta que su tiempo y su bienestar son valorados.</p>
+            <p class="informacion-tienda__parrafo">Nuestro compromiso es combinar tecnología, calidad y cercanía humana.
+                Queremos que cada cliente pueda acceder
+                a una amplia variedad de productos, con precios justos y promociones exclusivas, pero además que viva
+                una
+                experiencia de compra segura, confiable y simple. Porque creemos que la confianza se gana con hechos:
+                entregando a tiempo, cumpliendo con lo prometido y cuidando cada detalle.</p>
+            <p class="informacion-tienda__parrafo">En Click&Shop nos mueve un sueño: que cada pedido llegue acompañado
+                de la satisfacción de haber elegido un
+                servicio que facilita la vida. Nuestra meta es estar presentes en esos pequeños grandes momentos, siendo
+                parte del día a día de las familias y contribuyendo a que las rutinas sean más llevaderas.</p>
+            <p class="informacion-tienda__parrafo">✨ Click&Shop: porque comprar puede ser fácil, rápido… y también una
+                experiencia que regala sonrisas.</p>
+        </section>
+
+        <Section class="Mapa">
+            <iframe class="Mapa__enlace"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52990.72059106094!2d-60.60268105408957!3d-33.891713182217046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b84aad3ef60a31%3A0x481ac3277962e9c5!2sPergamino%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1758831870890!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </Section>
+
+        <!-- Botón flotante de WhatsApp -->
+        <section class="boton-whatsapp">
+            <a href="https://wa.me/5492477454622" target="_blank" class="boton-whatsapp__enlace">
+                <img src="../assets/whatsapp.png" alt="WhatsApp" class="boton-whatsapp__icono">
             </a>
         </section>
     </main>
 
-    <footer>
-        <section>
-            <h3>Derechos reservados de autor // Creado por Juan Fram</h3>
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <section class="pie__superior">
+            <h3 class="pie__legal">Derechos reservados de autor // Creado por Juan Fram</h3>
         </section>
-        <ul class="redes-sociales">
-            <li>
-                <img src="../assets/instagram.png" alt="Logo Instagram" class="imgredes">
+
+        <!-- Redes sociales -->
+        <ul class="redes">
+            <li class="redes__item">
+                <img src="../assets/instagram.png" alt="Logo Instagram" class="redes__icono">
                 <a href="https://www.instagram.com/juanfram5/?next=%2F" target="_blank" style="text-decoration: none;"
-                    class="redes">Instagram</a>
+                    class="redes__link">Instagram</a>
             </li>
-            <li>
-                <img src="../assets/facebook.png" alt="Logo Facebook" class="imgredes">
+            <li class="redes__item">
+                <img src="../assets/facebook.png" alt="Logo Facebook" class="redes__icono">
                 <a href="https://www.facebook.com/juan.fran.334" target="_blank" style="text-decoration: none;"
-                    class="redes">Facebook</a>
-            </li>
+                    class="redes__link">Facebook</a>
+            </li class="redes__item">
             <li>
-                <img src="../assets/linkedin.png" alt="Logo Linkedin" class="imgredes">
+                <img src="../assets/linkedin.png" alt="Logo Linkedin" class="redes__icono">
                 <a href="https://www.linkedin.com/in/juanfram-networking/" target="_blank"
-                    style="text-decoration: none;" class="redes">Linkedin</a>
+                    style="text-decoration: none;" class="redes__link">Linkedin</a>
             </li>
         </ul>
-        <h4>Click&Shop</h4>
+        <h4 class="pie__marca">Click&Shop</h4>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

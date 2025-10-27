@@ -5,258 +5,407 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
 <body>
-    <header>
-        <section class="container-header">
-            <a href="../index.html">
-                <img src="../assets/Logo.png" alt="Imagen de Click&Shop" class="logo">
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="encabezado">
+        <section class="encabezado__contenido">
+            <a href="../index.html" class="encabezado__marca">
+                <img src="../assets/Logo.png" alt="Imagen de Click&Shop" class="encabezado__logo">
             </a>
-            <h1 class="titulos">Catálogo</h1>
-            <nav>
-                <div class="ventanas">
-                    <ul>
-                        <li class="link">
-                            <a href="../index.html" style="text-decoration: none;">Inicio</a>
-                        </li>
-                        <li class="link">
-                            <a href="./informacion.html " style="text-decoration: none;">Información de
-                                nosotros</a>
-                        </li>
-                        <li class="link">
-                            <a href="./catalogo.html" style="text-decoration: none;">Catálogo</a>
-                        </li>
-                        <li class="link">
-                            <a href="./carrito.html" style="text-decoration: none;">Carrito</a>
-                        </li>
-                        <li class="link">
-                            <a href="./recetas.html" style="text-decoration: none;">Recetas</a>
-                        </li>
-                        <li class="link">
-                            <a href="./contacto.html" style="text-decoration: none;">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <!-- Título de la página -->
+            <h1 class="encabezado__titulo">Catálogo</h1>
+
+            <!-- Navegación principal -->
+            <nav class="navegacion-principal">
+                <ul class="navegacion-principal__lista">
+                    <li class="navegacion-principal__item">
+                        <a href="../index.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Inicio</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./informacion.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Información de
+                            nosotros</a>
+                    </li>
+                    <li class="navegacion-principal__item navegacion-principal__item--activo">
+                        <a href="./catalogo.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Catálogo</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./carrito.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Carrito</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./recetas.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Recetas</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./contacto.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Contacto</a>
+                    </li>
+                </ul>
             </nav>
         </section>
     </header>
 
-    <main>
-        <h1>Productos</h1>
-        <!--Catálogo-->
-        <h3 class="Catalogo">Lácteos</h3>
-        <section class="contenedor">
-            <div class="caja" id="caja1">Leche ''La Serenisima'' x 1 Litro Entera
-                <br>
-                <img src="../productos/Leche Carrefour.webp" alt="Imágen de Leche">
-                <p><strong>Precio:</strong> $1.305,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja" id="caja1">Yogur batido Ser PRO+ con proteínas sabor frutos rojos 175 grs
-                <br>
-                <img src="../productos/Yogur batido Ser PRO+ con proteínas sabor frutos rojos 175 grs.webp"
-                    alt="Imágen de Yogur">
-                <p><strong>Precio:</strong> $2.355,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja" id="caja1">Yogur bebible frutilla La SerenÍsima clásico 900 g
-                <br>
-                <img src="../productos/Yogur bebible frutilla La SerenÍsima clásico 900 g..webp" alt="Imágen de Yogur">
-                <p><strong>Precio:</strong> $3.699,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja" id="caja1">Queso crema Casancrem clásico 500 grs
-                <br>
-                <img src="../productos/Queso crema Casancrem clásico 500 grs.webp" alt="Imágen de Queso Untable">
-                <p><strong>Precio:</strong> $7.699,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja" id="caja1">Queso La Serenísima cremón light pote 280 g
-                <br>
-                <img src="../productos/Queso La Serenísima cremón light pote 280 g..webp" alt="Imágen de Queso Untable">
-                <p><strong>Precio:</strong> $3.359,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja" id="caja1">Queso crema La Paulina tradicional 290 g
-                <br>
-                <img src="../productos/Queso crema La Paulina tradicional 290 g..webp" alt="Imágen de Queso Untable">
-                <p><strong>Precio:</strong> $2.645,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-        </section>
-        <h3 class="Catalogo">Perfumeria</h3>
-        <section class="contenedor2">
-            </div>
-            <div class="caja">Eau de perfum Mujercitas 80 cc
-                <br>
-                <img src="../productos/Eau de perfum Mujercitas 80 cc..webp" alt="Imágen de Perfume">
-                <p><strong>Precio:</strong> $8.149,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Desodorante Rexona Active Emotion Women 150 ml
-                <br>
-                <img src="../productos/Desodorante Rexona Active Emotion Women 150 ml.webp" alt="Imágen de Desodorante">
-                <p><strong>Precio:</strong> $2.459,25 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Jabón de tocador Dove original multipack x3 90 grs
-                <br>
-                <img src="../productos/Jabón de tocador Dove original multipack x3 90 grs.webp" alt="Imágen de Jabón">
-                <p><strong>Precio:</strong> $5.459,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-        </section>
-        <h3 class="Catalogo">Limpieza</h3>
-        <section class="contenedor3">
-            <div class="caja">Lavandina clásica desinfectante Ayudín 2 lts
-                <br>
-                <img src="../productos/Lavandina clásica desinfectante Ayudín 2 lts..webp" alt="Imágen de Lavandina">
-                <p><strong>Precio:</strong> $2.459,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Limpiador líquido aromatizante Poett flores de primavera 1.8 lts
-                <br>
-                <img src="../productos/Limpiador líquido aromatizante Poett flores de primavera 1.8 lts..webp"
-                    alt="Imágen de Perfumina">
-                <p><strong>Precio:</strong> $3.519,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Limpiador líquido aromatizante Poett alegra tu día 1.8 lts
-                <br>
-                <img src="../productos/Limpiador líquido aromatizante Poett alegra tu día 1.8 lts..webp"
-                    alt="Imágen de Perfumina">
-                <p><strong>Precio:</strong> $3.519,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Limpiador líquido aromatizante Poett frescura de lavanda 1.8 lts
-                <br>
-                <img src="../productos/Limpiador líquido aromatizante Poett frescura de lavanda 1.8 lts..webp"
-                    alt="Imágen de Perfumina">
-                <p><strong>Precio:</strong> $3.519,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Jabón líquido para ropa Skip concentrado bio encimas 500 cc
-                <br>
-                <img src="../productos/Jabón líquido para ropa Skip concentrado bio encimas 500 cc..webp"
-                    alt="Imágen de Jabón para la ropa">
-                <p><strong>Precio:</strong> $10.695,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Detergente Magistral ultra limón en botella 750 cc
-                <br>
-                <img src="../productos/Detergente Magistral ultra limón en botella 750 cc..webp"
-                    alt="Imágen de Jabón para la ropa">
-                <p><strong>Precio:</strong> $5.719,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Suavizante clásico Comfort para ropa dp 3 lt
-                <br>
-                <img src="../productos/Suavizante clásico Comfort para ropa dp 3 lt..webp" alt="Imágen de Suavizante">
-                <p><strong>Precio:</strong> $12.560,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Suavizante clásico Vivere para ropa dp 3 lt
-                <br>
-                <img src="../productos/Suavizante clásico Vivere para ropa dp 3 lt..webp" alt="Imágen de Suavizante">
-                <p><strong>Precio:</strong> $9.900,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main class="principal">
+        <h1 class="principal__titulo">Productos</h1>
+
+        <!-- ============ SECCIÓN LÁCTEOS ============ -->
+        <section class="listado-productos">
+            <h3 class="listado-productos__categoria">Lácteos</h3>
+            <div class="listado-productos__grid" id="caja1">
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Leche "La Serenísima" x 1 Litro Entera
+                    </h3>
+                    <img src="../productos/Leche Carrefour.webp" alt="Imágen de Leche" class="producto__imagen">
+                    <p class="producto__precio"><strong>Precio:</strong> $1.305,00 c/u</p>
+                    <label class="producto__etiqueta">Cantidad:</label>
+                    <input class="producto__campo-cantidad" type="number">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Yogur batido Ser PRO+ con proteínas sabor frutos rojos 175 g
+                    </h3>
+                    <img src="../productos/Yogur batido Ser PRO+ con proteínas sabor frutos rojos 175 grs.webp"
+                        alt="Yogur Ser PRO+ frutos rojos" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $2.355,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-yogur1">Cantidad:</label>
+                    <input id="cant-yogur1" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Yogur bebible frutilla La Serenísima clásico 900 g
+                    </h3>
+                    <img src="../productos/Yogur bebible frutilla La SerenÍsima clásico 900 g..webp"
+                        alt="Yogur bebible frutilla La Serenísima 900g" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $3.699,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-yogur2">Cantidad:</label>
+                    <input id="cant-yogur2" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Queso crema Casancrem clásico 500 g
+                    </h3>
+                    <img src="../productos/Queso crema Casancrem clásico 500 grs.webp" alt="Queso crema Casancrem 500g"
+                        class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $7.699,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-casancrem">Cantidad:</label>
+                    <input id="cant-casancrem" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Queso La Serenísima cremón light pote 280 g
+                    </h3>
+                    <img src="../productos/Queso La Serenísima cremón light pote 280 g..webp"
+                        alt="Queso Cremón light pote 280g" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $3.359,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-cremon">Cantidad:</label>
+                    <input id="cant-cremon" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Queso crema La Paulina tradicional 290 g
+                    </h3>
+                    <img src="../productos/Queso crema La Paulina tradicional 290 g..webp"
+                        alt="Queso crema La Paulina 290g" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $2.645,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-lapaulina">Cantidad:</label>
+                    <input id="cant-lapaulina" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
             </div>
         </section>
-        <h3 class="Catalogo">Almacén</h3>
-        <section class="contenedor4">
-            <div class="caja">Huevos blanco El Mercado plástico 12 uni
-                <br>
-                <img src="../productos/Huevos blanco El Mercado plástico 12 uni.webp" alt="Imágen de Huevos">
-                <p><strong>Precio:</strong> $4.390,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Pan de papa de hamburguesa Bimbo Artesano 4 uni
-                <br>
-                <img src="../productos/Pan de papa de hamburguesa Bimbo Artesano 4 uni.webp"
-                    alt="Imágen de Pan de Hamburguesa">
-                <p><strong>Precio:</strong> $4.100,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
-            </div>
-            <div class="caja">Yerba mate Playadito suave con palo 1 kg.
-                <br>
-                <img src="../productos/Yerba mate Playadito suave con palo 1 kg..webp" alt="Imágen de Suavizante">
-                <p><strong>Precio:</strong> $4.370,00 c/u</p>
-                <label>Cantidad:</label>
-                <input class="cantidad" type="number">
-                <input class="boton_compra" type="submit" value="Comprar">
+
+        <!-- ============ SECCIÓN PERFUMERÍA ============ -->
+        <section class="listado-productos">
+            <h2 class="listado-productos__categoria">Perfumería</h2>
+            <div class="listado-productos__grid">
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Eau de parfum Mujercitas 80 cc
+                    </h3>
+                    <img src="../productos/Eau de perfum Mujercitas 80 cc..webp" alt="Perfume Mujercitas 80cc"
+                        class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $8.149,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-perfume">Cantidad:</label>
+                    <input id="cant-perfume" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Desodorante Rexona Active Emotion Women 150 ml
+                    </h3>
+                    <img src="../productos/Desodorante Rexona Active Emotion Women 150 ml.webp"
+                        alt="Desodorante Rexona Active Emotion" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $2.459,25 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-rexona">Cantidad:</label>
+                    <input id="cant-rexona" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Jabón de tocador Dove original multipack x3 90 g
+                    </h3>
+                    <img src="../productos/Jabón de tocador Dove original multipack x3 90 grs.webp" alt="Jabón Dove x3"
+                        class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $5.459,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-dove">Cantidad:</label>
+                    <input id="cant-dove" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
             </div>
         </section>
-        <br>
-        <section class="whatsapp">
-            <a href="https://wa.me/5492477454622" target="_blank">
-                <img src="../assets/whatsapp.png" alt="WhatsApp" class="imagenw">
+
+        <!-- ============ SECCIÓN LIMPIEZA ============ -->
+        <section class="listado-productos">
+            <h2 class="listado-productos__categoria">Limpieza</h2>
+            <div class="listado-productos__grid">
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Lavandina clásica desinfectante Ayudín 2 L
+                    </h3>
+                    <img src="../productos/Lavandina clásica desinfectante Ayudín 2 lts..webp" alt="Lavandina Ayudín 2L"
+                        class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $2.459,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-ayudin">Cantidad:</label>
+                    <input id="cant-ayudin" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Limpiador líquido aromatizante Poett flores de primavera 1.8 L
+                    </h3>
+                    <img src="../productos/Limpiador líquido aromatizante Poett flores de primavera 1.8 lts..webp"
+                        alt="Limpiador Poett primavera 1.8L" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $3.519,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-poett1">Cantidad:</label>
+                    <input id="cant-poett1" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Limpiador líquido aromatizante Poett alegra tu día 1.8 L
+                    </h3>
+                    <img src="../productos/Limpiador líquido aromatizante Poett alegra tu día 1.8 lts..webp"
+                        alt="Limpiador Poett alegra tu día 1.8L" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $3.519,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-poett2">Cantidad:</label>
+                    <input id="cant-poett2" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Limpiador líquido aromatizante Poett frescura de lavanda 1.8 L
+                    </h3>
+                    <img src="../productos/Limpiador líquido aromatizante Poett frescura de lavanda 1.8 lts..webp"
+                        alt="Limpiador Poett lavanda 1.8L" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $3.519,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-poett3">Cantidad:</label>
+                    <input id="cant-poett3" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Jabón líquido para ropa Skip concentrado bio enzimas 500 cc
+                    </h3>
+                    <img src="../productos/Jabón líquido para ropa Skip concentrado bio encimas 500 cc..webp"
+                        alt="Skip concentrado 500cc" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $10.695,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-skip">Cantidad:</label>
+                    <input id="cant-skip" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Detergente Magistral ultra limón en botella 750 cc
+                    </h3>
+                    <img src="../productos/Detergente Magistral ultra limón en botella 750 cc..webp"
+                        alt="Detergente Magistral limón 750cc" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $5.719,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-magistral">Cantidad:</label>
+                    <input id="cant-magistral" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Suavizante clásico Comfort para ropa doypack 3 L
+                    </h3>
+                    <img src="../productos/Suavizante clásico Comfort para ropa dp 3 lt..webp"
+                        alt="Suavizante Comfort 3L" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $12.560,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-comfort">Cantidad:</label>
+                    <input id="cant-comfort" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Suavizante clásico Vivere para ropa doypack 3 L
+                    </h3>
+                    <img src="../productos/Suavizante clásico Vivere para ropa dp 3 lt..webp" alt="Suavizante Vivere 3L"
+                        class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $9.900,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-vivere">Cantidad:</label>
+                    <input id="cant-vivere" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ SECCIÓN ALMACÉN ============ -->
+        <section class="listado-productos">
+            <h2 class="listado-productos__categoria">Almacén</h2>
+            <div class="listado-productos__grid">
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Huevos blancos El Mercado (maple plástico) 12 uni
+                    </h3>
+                    <img src="../productos/Huevos blanco El Mercado plástico 12 uni.webp"
+                        alt="Maple de huevos blancos El Mercado x12" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $4.390,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-huevos">Cantidad:</label>
+                    <input id="cant-huevos" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Pan de papa para hamburguesa Bimbo Artesano (4 uni)
+                    </h3>
+                    <img src="../productos/Pan de papa de hamburguesa Bimbo Artesano 4 uni.webp"
+                        alt="Pan de papa Bimbo Artesano x4" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $4.100,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-panpapa">Cantidad:</label>
+                    <input id="cant-panpapa" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+
+                <article class="producto">
+                    <h3 class="producto__nombre">
+                        Yerba mate Playadito suave con palo 1 kg
+                    </h3>
+                    <img src="../productos/Yerba mate Playadito suave con palo 1 kg..webp"
+                        alt="Yerba Playadito suave 1kg" class="producto__imagen">
+                    <p class="producto__precio">
+                        <strong>Precio:</strong> $4.370,00 c/u
+                    </p>
+                    <label class="producto__etiqueta" for="cant-yerba">Cantidad:</label>
+                    <input id="cant-yerba" class="producto__campo-cantidad" type="number" min="1">
+                    <input class="producto__boton-comprar" type="submit" value="Comprar">
+                </article>
+            </div>
+        </section>
+
+        <!-- Botón flotante de WhatsApp -->
+        <section class="boton-whatsapp">
+            <a href="https://wa.me/5492477454622" target="_blank" class="boton-whatsapp__enlace"
+                aria-label="Contactar por WhatsApp">
+                <img src="../assets/whatsapp.png" alt="WhatsApp" class="boton-whatsapp__icono">
             </a>
         </section>
     </main>
 
-    <footer>
-        <section>
-            <h3>Derechos reservados de autor // Creado por Juan Fram</h3>
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <section class="pie__superior">
+            <h3 class="pie__legal">
+                Derechos reservados de autor // Creado por Juan Fram
+            </h3>
         </section>
-        <ul class="redes-sociales">
-            <li>
-                <img src="../assets/instagram.png" alt="Logo Instagram" class="imgredes">
-                <a href="https://www.instagram.com/juanfram5/?next=%2F" target="_blank" style="text-decoration: none;"
-                    class="redes">Instagram</a>
+
+        <ul class="redes">
+            <li class="redes__item">
+                <img src="../assets/instagram.png" alt="Logo Instagram" class="redes__icono">
+                <a href="https://www.instagram.com/juanfram5/?next=%2F" target="_blank"
+                    class="redes__link">Instagram</a>
             </li>
-            <li>
-                <img src="../assets/facebook.png" alt="Logo Facebook" class="imgredes">
-                <a href="https://www.facebook.com/juan.fran.334" target="_blank" style="text-decoration: none;"
-                    class="redes">Facebook</a>
+
+            <li class="redes__item">
+                <img src="../assets/facebook.png" alt="Logo Facebook" class="redes__icono">
+                <a href="https://www.facebook.com/juan.fran.334" target="_blank" class="redes__link">Facebook</a>
             </li>
-            <li>
-                <img src="../assets/linkedin.png" alt="Logo Linkedin" class="imgredes">
+
+            <li class="redes__item">
+                <img src="../assets/linkedin.png" alt="Logo Linkedin" class="redes__icono">
                 <a href="https://www.linkedin.com/in/juanfram-networking/" target="_blank"
-                    style="text-decoration: none;" class="redes">Linkedin</a>
+                    class="redes__link">Linkedin</a>
             </li>
         </ul>
-        <h4>Click&Shop</h4>
+
+        <h4 class="pie__marca">Click&Shop</h4>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

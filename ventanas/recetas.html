@@ -5,104 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
 <body>
-    <header>
-        <section class="container-header">
-            <a href="../index.html">
-                <img src="../assets/Logo.png" alt="Imagen de Click&Shop" class="logo">
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="encabezado">
+        <section class="encabezado__contenido">
+            <a href="../index.html" class="encabezado__marca">
+                <img src="../assets/Logo.png" alt="Imagen de Click&Shop" class="encabezado__logo">
             </a>
-            <h1 class="titulos">Recetas</h1>
-            <nav>
-                <div class="ventanas">
-                    <ul>
-                        <li class="link">
-                            <a href="../index.html" style="text-decoration: none;">Inicio</a>
-                        </li>
-                        <li class="link">
-                            <a href="./informacion.html " style="text-decoration: none;">Información de
-                                nosotros</a>
-                        </li>
-                        <li class="link">
-                            <a href="./catalogo.html" style="text-decoration: none;">Catálogo</a>
-                        </li>
-                        <li class="link">
-                            <a href="./carrito.html" style="text-decoration: none;">Carrito</a>
-                        </li>
-                        <li class="link">
-                            <a href="./recetas.html" style="text-decoration: none;">Recetas</a>
-                        </li>
-                        <li class="link">
-                            <a href="./contacto.html" style="text-decoration: none;">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <!-- Título de la página -->
+            <h1 class="encabezado__titulo">Recetas</h1>
+
+            <!-- Navegación principal -->
+            <nav class="navegacion-principal">
+                <ul class="navegacion-principal__lista">
+                    <li class="navegacion-principal__item">
+                        <a href="../index.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Inicio</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./informacion.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Información de
+                            nosotros</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./catalogo.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Catálogo</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./carrito.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Carrito</a>
+                    </li>
+                    <li class="navegacion-principal__item navegacion-principal__item--activo">
+                        <a href="./recetas.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Recetas</a>
+                    </li>
+                    <li class="navegacion-principal__item">
+                        <a href="./contacto.html" style="text-decoration: none;"
+                            class="navegacion-principal__enlace">Contacto</a>
+                    </li>
+                </ul>
             </nav>
         </section>
     </header>
 
-    <main>
-        <h2>Recetas para que pueda realizar con nuestros productos</h2>
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main class="principal">
+        <h2 class="principal__introduccion">Recetas para que pueda realizar con nuestros productos</h2>
         <!--Recetas-->
-        <h3>Lista de recetas</h3>
-        <p></p>
-        <br>
-        <section class="whatsapp">
-            <a href="https://wa.me/5492477454622" target="_blank">
-                <img src="../assets/whatsapp.png" alt="WhatsApp" class="imagenw">
+        <h3 class="principal__subtitulo">Lista de recetas</h3>
+        <p class="principal__parrafo"></p>
+
+
+        <!-- Botón flotante de WhatsApp -->
+        <section class="boton-whatsapp">
+            <a href="https://wa.me/5492477454622" target="_blank" class="boton-whatsapp__enlace">
+                <img src="../assets/whatsapp.png" alt="WhatsApp" class="boton-whatsapp__icono">
             </a>
         </section>
-        <div class="listarecetas">
-            <div class="ingredientes">Ingrediente</div>
-            <div class="ingredientes">Cantidad</div>
-            <div class="ingredientes">Pechuga o muslo de pollo deshuesado</div>
-            <div class="ingredientes">1 unidad</div>
-            <div class="ingredientes">Arroz</div>
-            <div class="ingredientes">2 tazas</div>
-            <div class="ingredientes">Cebolla</div>
-            <div class="ingredientes">1 unidad</div>
-            <div class="ingredientes">Zanahoria</div>
-            <div class="ingredientes">1 unidad</div>
-            <div class="ingredientes">Ajo</div>
-            <div class="ingredientes">2 dientes</div>
-            <div class="ingredientes">Aceite</div>
-            <div class="ingredientes">1 cucharada</div>
-            <div class="ingredientes">Pimentón</div>
-            <div class="ingredientes">1 cucharadita</div>
-            <div class="ingredientes">Sal y pimienta</div>
-            <div class="ingredientes">A gusto</div>
-            <div class="ingredientes">Caldo de pollo o verduras</div>
-            <div class="ingredientes">4 tazas</div>
-            <div class="ingredientes">Arvejas o maíz</div>
-            <div class="ingredientes">Opcional</div>
+
+        <h3>Receta: Arroz con pollo</h3>
+        <div class="receta">
+            <div class="receta__ingrediente">Ingrediente</div>
+            <div class="receta__ingrediente">Cantidad</div>
+            <div class="receta__ingrediente">Pechuga o muslo de pollo deshuesado</div>
+            <div class="receta__ingrediente">1 unidad</div>
+            <div class="receta__ingrediente">Arroz</div>
+            <div class="receta__ingrediente">2 tazas</div>
+            <div class="receta__ingrediente">Cebolla</div>
+            <div class="receta__ingrediente">1 unidad</div>
+            <div class="receta__ingrediente">Zanahoria</div>
+            <div class="receta__ingrediente">1 unidad</div>
+            <div class="receta__ingrediente">Ajo</div>
+            <div class="receta__ingrediente">2 dientes</div>
+            <div class="receta__ingrediente">Aceite</div>
+            <div class="receta__ingrediente">1 cucharada</div>
+            <div class="receta__ingrediente">Pimentón</div>
+            <div class="receta__ingrediente">1 cucharadita</div>
+            <div class="receta__ingrediente">Sal y pimienta</div>
+            <div class="receta__ingrediente">A gusto</div>
+            <div class="receta__ingrediente">Caldo de pollo o verduras</div>
+            <div class="receta__ingrediente">4 tazas</div>
+            <div class="receta__ingrediente">Arvejas o maíz</div>
+            <div class="receta__ingrediente">Opcional</div>
         </div>
     </main>
 
-    <footer>
-        <section>
-            <h3>Derechos reservados de autor // Creado por Juan Fram</h3>
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <section class="pie__superior">
+            <h3 class="pie__legal">Derechos reservados de autor // Creado por Juan Fram</h3>
         </section>
-        <ul class="redes-sociales">
-            <li>
-                <img src="../assets/instagram.png" alt="Logo Instagram" class="imgredes">
+
+        <!-- Redes sociales -->
+        <ul class="redes">
+            <li class="redes__item">
+                <img src="../assets/instagram.png" alt="Logo Instagram" class="redes__icono">
                 <a href="https://www.instagram.com/juanfram5/?next=%2F" target="_blank" style="text-decoration: none;"
-                    class="redes">Instagram</a>
+                    class="redes__link">Instagram</a>
             </li>
-            <li>
-                <img src="../assets/facebook.png" alt="Logo Facebook" class="imgredes">
+            <li class="redes__item">
+                <img src="../assets/facebook.png" alt="Logo Facebook" class="redes__icono">
                 <a href="https://www.facebook.com/juan.fran.334" target="_blank" style="text-decoration: none;"
-                    class="redes">Facebook</a>
-            </li>
+                    class="redes__link">Facebook</a>
+            </li class="redes__item">
             <li>
-                <img src="../assets/linkedin.png" alt="Logo Linkedin" class="imgredes">
+                <img src="../assets/linkedin.png" alt="Logo Linkedin" class="redes__icono">
                 <a href="https://www.linkedin.com/in/juanfram-networking/" target="_blank"
-                    style="text-decoration: none;" class="redes">Linkedin</a>
+                    style="text-decoration: none;" class="redes__link">Linkedin</a>
             </li>
         </ul>
-        <h4>Click&Shop</h4>
+        <h4 class="pie__marca">Click&Shop</h4>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

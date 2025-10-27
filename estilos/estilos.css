@@ -58,7 +58,7 @@ footer {
     text-align: center;
 }
 
-.titulos {
+.encabezado__titulo {
     text-transform: uppercase;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -70,7 +70,9 @@ footer {
     font-size: 25px;
 }
 
-.redes {
+/* Estilos para las redes sociales */
+.redes__link {
+    text-decoration: none;
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(209, 183, 204);
@@ -83,41 +85,31 @@ footer {
     background-color: rgb(46, 16, 73);
 }
 
-.caja {
-    padding: 40px;
-    margin: 40 px;
-    height: 80vh;
-    width: 30vw;
-    border: 2px solid black;
-    line-height: 40px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: solid;
-    background-color: rgb(30, 5, 36);
-    color: rgb(209, 183, 204);
+.redes__icono {
+    width: 40px;
+    height: auto;
 }
 
-.boton_compra {
+.redes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+}
+
+.producto__boton-comprar {
     width: 100px;
     height: 40px;
     background-color: rgb(209, 183, 204);
     color: rgb(30, 5, 36);
 }
 
-.cantidad {
+.producto__campo-cantidad {
     width: 50px;
     height: 30px;
     background-color: rgb(209, 183, 204);
     color: rgb(30, 5, 36);
-}
-
-.contenedor {
-    display: flex;
-    overflow-x: auto;
-    flex-flow: row wrap;
-    margin: 15px;
-    gap: 15px;
-    justify-content: space-evenly;
 }
 
 .contenedor2 {
@@ -147,7 +139,7 @@ footer {
     justify-content: space-evenly;
 }
 
-.Catalogo {
+.listado-productos__categoria {
     text-transform: uppercase;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -157,7 +149,7 @@ footer {
     color: rgb(78, 28, 68);
 }
 
-.ventanas {
+.navegacion-principal {
     display: flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(209, 183, 204);
@@ -176,7 +168,7 @@ header {
     padding: 10px 0;
 }
 
-.container-header {
+.encabezado__contenido {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -187,7 +179,7 @@ header {
     /* 🔹 centra todo */
 }
 
-.logo {
+.encabezado__logo {
     height: 100px;
     width: 100px;
 }
@@ -220,43 +212,72 @@ hr {
     margin: 20px 0;
 }
 
-.whatsapp {
+/* Botón de WhatsApp fijo en la esquina inferior derecha */
+.boton-whatsapp {
     position: fixed;
     bottom: 30px;
     right: 30px;
     gap: 15px;
 }
 
-.imagenw {
-    width: 60px; 
-    height: auto;  
+.boton-whatsapp__icono {
+    width: 60px;
+    height: auto;
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
 
-.contacto {
+.info-local__dato {
     text-decoration: solid;
     background-color: rgb(219, 215, 154);
     color: rgb(78, 28, 68);
 }
 
-.imgredes {
-    width: 40px; 
-    height: auto;  
+.contacto__formulario {
+    display: grid;
+    grid-column: auto;
+    gap: 15px;
 }
 
-.label {
+.contacto__etiqueta {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(209, 183, 204);
     font-style: italic;
     font-weight: bold;
     width: 100px;
-    height: 100px;
+    height: 50px;
     border: 2px solid black;
     line-height: 40px;
     background-color: rgb(46, 16, 73);
+}
+
+.contacto__campo {
+    width: 600px;
+    height: 40px;
+    background-color: rgb(209, 183, 204);
+    color: rgb(30, 5, 36);
+    border: 2px solid black;
+    padding: 2px 4px;
+    font-size: 16px;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contacto__acciones {
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.info-local__mapa {
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 50px;
 }
 
 .tabla {
@@ -278,7 +299,248 @@ hr {
     grid-template-columns: 2fr 1fr 1fr;
 }
 
-.listarecetas {
+.receta {
     display: grid;
     grid-template-columns: 20pc 10pc
+}
+
+/* ====== CATÁLOGO / TARJETAS DE PRODUCTO ====== */
+
+/* Contenedor de cada categoría (Lácteos, Perfumería, etc.) */
+.listado-productos {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Título de la categoría */
+.listado-productos__categoria {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+    background-color: rgb(219, 215, 154);
+    color: rgb(78, 28, 68);
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(78, 28, 68);
+}
+
+/* Grilla que contiene varias tarjetas de producto */
+.listado-productos__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 2rem;
+}
+
+/* TARJETA del producto */
+.producto {
+    background-color: rgb(30, 5, 36);
+    /* violeta oscuro */
+    color: rgb(209, 183, 204);
+    /* texto lila claro */
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+}
+
+/* Nombre / título del producto */
+.producto__nombre {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(209, 183, 204);
+    margin: 0;
+    padding: 0;
+    /* Importante: sacamos alto fijo */
+}
+
+/* Imagen del producto */
+.producto__imagen {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    align-self: center;
+    background-color: #fff0;
+    /* transparente */
+}
+
+/* Precio */
+.producto__precio {
+    font-size: 18px;
+    color: rgb(209, 183, 204);
+    margin: 0;
+}
+
+/* Label "Cantidad:" */
+.producto__etiqueta {
+    font-size: 16px;
+    color: rgb(209, 183, 204);
+    font-weight: 500;
+}
+
+/* Input de cantidad */
+.producto__campo-cantidad {
+    width: 60px;
+    height: 32px;
+    background-color: rgb(209, 183, 204);
+    color: rgb(30, 5, 36);
+    border: 2px solid black;
+    padding: 2px 4px;
+    font-size: 16px;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Botón "Comprar" */
+.producto__boton-comprar {
+    width: 110px;
+    height: 40px;
+    background-color: rgb(209, 183, 204);
+    color: rgb(30, 5, 36);
+    border: 2px solid black;
+    font-size: 16px;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.producto__boton-comprar:hover {
+    filter: brightness(1.05);
+}
+
+.pie__legal {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(78, 28, 68);
+    text-decoration: solid;
+    background-color: rgb(219, 215, 154);
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+    footer {
+        width: 100%;
+    }
+
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pl"
+            "rs"
+            "pm";
+        row-gap: 1.5rem;
+
+        padding: 1.5rem 1rem 2.5rem 1rem;
+        box-sizing: border-box;
+        justify-items: center;
+        text-align: center;
+
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    .pie__legal {
+        grid-area: pl;
+        max-width: 90%;
+        background-color: rgb(219, 215, 154);
+        border: 2px solid rgb(78, 28, 68);
+        padding: 1rem;
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .redes {
+        grid-area: rs;
+        display: grid;
+        justify-items: center;
+        row-gap: 1rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .redes__item {
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .pie__marca {
+        grid-area: pm;
+        font-size: 1.8rem;
+        color: rgb(30, 5, 36);
+        text-align: center;
+    }
+}
+
+@media (min-width: 431) and (max-width:730) {
+        footer {
+        width: 100%;
+    }
+
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pl"
+            "rs"
+            "pm";
+        row-gap: 1.5rem;
+
+        padding: 1.5rem 1rem 2.5rem 1rem;
+        box-sizing: border-box;
+        justify-items: center;
+        text-align: center;
+
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    .pie__legal {
+        grid-area: pl;
+        max-width: 90%;
+        background-color: rgb(219, 215, 154);
+        border: 2px solid rgb(78, 28, 68);
+        padding: 1rem;
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .redes {
+        grid-area: rs;
+        display: grid;
+        justify-items: center;
+        row-gap: 1rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .redes__item {
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .pie__marca {
+        grid-area: pm;
+        font-size: 1.8rem;
+        color: rgb(30, 5, 36);
+        text-align: center;
+    }
 }
