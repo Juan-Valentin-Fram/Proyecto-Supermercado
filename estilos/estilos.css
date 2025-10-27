@@ -47,7 +47,6 @@ header {
     display: flex;
     background-color: rgb(21, 2, 39);
     justify-content: space-around;
-    height: 50px;
     position: sticky;
     top: 0px;
 }
@@ -157,34 +156,53 @@ footer {
     font-weight: bold;
     list-style: none;
     gap: 15px;
+    justify-content: space-around !important;
+    width: 100%;
+}
+
+.navbar-collapse {
+    justify-content: center;
 }
 
 /* Para configurar el header */
 
 header {
     background-color: #1a0028;
-    /* tu color oscuro */
     color: #f5e1ff;
-    padding: 10px 0;
+}
+
+.encabezado {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    /* clave */
+}
+
+.navegacion-principal .container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .encabezado__contenido {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* 🔹 separa logo a la izquierda y menú a la derecha */
     width: 90%;
-    /* 🔹 ajusta ancho total */
     margin: 0 auto;
-    /* 🔹 centra todo */
+    min-height: 60px;
+    align-items: center;
 }
 
 .encabezado__logo {
-    height: 100px;
-    width: 100px;
+    height: 5rem;
+    width: auto;
+    transform: scale(1.8);
+    transform-origin: left center;
 }
 
-nav ul {
+.navegacion-principal__lista {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -192,17 +210,29 @@ nav ul {
     gap: 20px;
 }
 
-nav a {
+.navegacion-principal__enlace {
     text-decoration: none;
     color: #b58bd2;
-    /* un violeta claro */
     font-size: 16px;
     font-weight: 500;
 }
 
-nav a:hover {
+.navegacion-principal__enlace:hover {
     color: #fff;
     /* cambia al pasar el mouse */
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: none;
+    color: rgb(219, 215, 154);
+}
+
+.navbar-toggler {
+    border-color: rgb(209, 183, 204);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28209, 183, 204, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 hr {
@@ -299,10 +329,6 @@ hr {
     grid-template-columns: 2fr 1fr 1fr;
 }
 
-.receta {
-    display: grid;
-    grid-template-columns: 20pc 10pc
-}
 
 /* ====== CATÁLOGO / TARJETAS DE PRODUCTO ====== */
 
@@ -427,7 +453,216 @@ hr {
     background-color: rgb(219, 215, 154);
 }
 
+/* ====== RECETAS ====== */
+.receta {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    color: rgb(30, 5, 36);
+}
+
+.receta__titulo {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: rgb(30, 5, 36);
+}
+
+.receta__tabla {
+    display: grid;
+    row-gap: 0.5rem;
+    background-color: rgb(30, 5, 36);
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    color: rgb(209, 183, 204);
+}
+
+.receta__fila {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;
+    align-items: start;
+}
+
+.receta__fila--encabezado {
+    font-weight: bold;
+    color: rgb(30, 5, 36);
+    background-color: rgb(219, 215, 154);
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: .5rem .75rem;
+    margin-bottom: .75rem;
+}
+
+.receta__fila--encabezado .receta__columna {
+    color: rgb(30, 5, 36);
+}
+
+.receta__columna {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.receta__columna--cantidad {
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 600;
+    color: rgb(209, 183, 204);
+}
+
+.receta__preparacion {
+    display: grid;
+    row-gap: 0.5rem;
+    background-color: rgb(30, 5, 36);
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    color: rgb(209, 183, 204);
+}
+
+.receta__titulo2 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: rgb(30, 5, 36);
+}
+
+.receta__imagen {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+/* ===== CARRUSEL ===== */
+
+/* El carrusel completo */
+#carouselExampleAutoplaying {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: rgb(30, 5, 36);
+    border-bottom: 2px solid rgb(78, 28, 68);
+}
+
+/* Cada slide */
+#carouselExampleAutoplaying .carousel-item {
+    max-height: 260px;
+    overflow: hidden;
+    background-color: rgb(30, 5, 36);
+}
+
+/* Las imágenes del carrusel */
+#carouselExampleAutoplaying .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 55vh;
+    object-fit: contain;
+    background-color: rgb(30, 5, 36);
+}
+
+/* Flechas del carrusel con tu estética */
+#carouselExampleAutoplaying .carousel-control-prev-icon,
+#carouselExampleAutoplaying .carousel-control-next-icon {
+    filter: invert(84%) sepia(11%) saturate(300%) hue-rotate(245deg) brightness(98%) contrast(90%);
+}
+
+#carouselExampleAutoplaying .carousel-control-prev,
+#carouselExampleAutoplaying .carousel-control-next {
+    width: 3rem;
+    opacity: 0.9;
+}
+
+#carouselExampleAutoplaying .carousel-control-prev:hover,
+#carouselExampleAutoplaying .carousel-control-next:hover {
+    opacity: 1;
+}
+
+#carouselExampleAutoplaying .carousel-item {
+    max-height: none;
+}
+
 @media (min-width: 320px) and (max-width: 430px) {
+
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pl"
+            "rs"
+            "pm";
+        row-gap: 1.5rem;
+
+        padding: 1.5rem 1rem 2.5rem 1rem;
+        box-sizing: border-box;
+        justify-items: center;
+        text-align: center;
+
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    .pie__legal {
+        grid-area: pl;
+        max-width: 90%;
+        background-color: rgb(219, 215, 154);
+        border: 2px solid rgb(78, 28, 68);
+        padding: 1rem;
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .redes {
+        grid-area: rs;
+        display: grid;
+        justify-items: center;
+        row-gap: 1rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .redes__item {
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .pie__marca {
+        grid-area: pm;
+        font-size: 1.8rem;
+        color: rgb(30, 5, 36);
+        text-align: center;
+    }
+
+    .receta__fila {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .receta__columna--cantidad {
+        text-align: left;
+        white-space: normal;
+        font-weight: 600;
+        margin-top: .25rem;
+    }
+
+    .receta__fila--encabezado {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #carouselExampleAutoplaying .carousel-item {
+        max-height: 260px;
+    }
+}
+
+@media (min-width: 431) and (max-width:768) {
     footer {
         width: 100%;
     }
@@ -484,63 +719,8 @@ hr {
         color: rgb(30, 5, 36);
         text-align: center;
     }
-}
 
-@media (min-width: 431) and (max-width:730) {
-        footer {
-        width: 100%;
-    }
-
-    .pie {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "pl"
-            "rs"
-            "pm";
-        row-gap: 1.5rem;
-
-        padding: 1.5rem 1rem 2.5rem 1rem;
-        box-sizing: border-box;
-        justify-items: center;
-        text-align: center;
-
-        min-height: auto;
-        height: auto;
-        overflow: visible;
-    }
-
-    .pie__legal {
-        grid-area: pl;
-        max-width: 90%;
-        background-color: rgb(219, 215, 154);
-        border: 2px solid rgb(78, 28, 68);
-        padding: 1rem;
-        margin: auto;
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-
-    .redes {
-        grid-area: rs;
-        display: grid;
-        justify-items: center;
-        row-gap: 1rem;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    .redes__item {
-        flex-direction: column;
-        align-items: center;
-        gap: .5rem;
-    }
-
-    .pie__marca {
-        grid-area: pm;
-        font-size: 1.8rem;
-        color: rgb(30, 5, 36);
-        text-align: center;
+    #carouselExampleAutoplaying .carousel-item {
+        max-height: 260px;
     }
 }

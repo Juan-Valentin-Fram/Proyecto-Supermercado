@@ -11,46 +11,46 @@
 </head>
 
 <body>
-
     <!-- ===== ENCABEZADO ===== -->
     <header class="encabezado">
         <section class="encabezado__contenido">
-            <a href="../index.html" class="encabezado__marca">
-                <img src="../assets/Logo.png" alt="Imagen de Click&Shop" class="encabezado__logo">
-            </a>
-
-            <!-- Título de la página -->
-            <h1 class="encabezado__titulo">Catálogo</h1>
-
-            <!-- Navegación principal -->
-            <nav class="navegacion-principal">
-                <ul class="navegacion-principal__lista">
-                    <li class="navegacion-principal__item">
-                        <a href="../index.html" style="text-decoration: none;"
-                            class="navegacion-principal__enlace">Inicio</a>
-                    </li>
-                    <li class="navegacion-principal__item">
-                        <a href="./informacion.html" style="text-decoration: none;"
-                            class="navegacion-principal__enlace">Información de
-                            nosotros</a>
-                    </li>
-                    <li class="navegacion-principal__item navegacion-principal__item--activo">
-                        <a href="./catalogo.html" style="text-decoration: none;"
-                            class="navegacion-principal__enlace">Catálogo</a>
-                    </li>
-                    <li class="navegacion-principal__item">
-                        <a href="./carrito.html" style="text-decoration: none;"
-                            class="navegacion-principal__enlace">Carrito</a>
-                    </li>
-                    <li class="navegacion-principal__item">
-                        <a href="./recetas.html" style="text-decoration: none;"
-                            class="navegacion-principal__enlace">Recetas</a>
-                    </li>
-                    <li class="navegacion-principal__item">
-                        <a href="./contacto.html" style="text-decoration: none;"
-                            class="navegacion-principal__enlace">Contacto</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navegacion-principal d-flex justify-content-around w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/Logo.png" alt="Imagen de Click&Shop" class="encabezado__logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav navegacion-principal__lista">
+                            <li class="nav-item navegacion-principal__item">
+                                <a class="nav-link navegacion-principal__enlace" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item navegacion-principal__item">
+                                <a class="nav-link navegacion-principal__enlace" 
+                                    href="./informacion.html">Información de nosotros</a>
+                            </li>
+                            <li class="nav-item navegacion-principal__item">
+                                <a class="nav-link navegacion-principal__enlace active" aria-current="page"
+                                    href="./catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item navegacion-principal__item">
+                                <a class="nav-link navegacion-principal__enlace"
+                                    href="./carrito.html">Carrito</a>
+                            </li>
+                            <li class="nav-item navegacion-principal__item">
+                                <a class="nav-link navegacion-principal__enlace"
+                                    href="./recetas.html">Recetas</a>
+                            </li>
+                            <li class="nav-item navegacion-principal__item">
+                                <a class="nav-link navegacion-principal__enlace"
+                                    href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </section>
     </header>
