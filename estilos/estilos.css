@@ -307,6 +307,11 @@ textarea:focus {
     box-shadow: 0 0 8px #c77dff;
 }
 
+input:required:valid,
+textarea:required:valid {
+    border: 2px solid green;
+}
+
 .descripcion-tienda {
     color: rgb(105, 69, 105);
     font-size: 25px;
@@ -318,11 +323,19 @@ textarea:focus {
     text-decoration: solid;
 }
 
-.acceso__formulario {
+.acceso {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.acceso__formulario {
     gap: 15px;
     margin: 15px;
-}   
+}
 
 .acceso__etiqueta {
     font-size: 20px;
@@ -341,13 +354,6 @@ textarea:focus {
     display: flex;
     gap: 15px;
     margin-left: 15px;
-    margin-bottom: 50px;
-}
-
-.info-local__mapa {
-    border: 2px solid black;
-    width: 600px;
-    height: 400px;
     margin-bottom: 50px;
 }
 
@@ -625,6 +631,78 @@ textarea:focus {
 
 #carouselExampleAutoplaying .carousel-item {
     max-height: none;
+}
+
+body {
+    background-color: #e8d4f7;
+}
+
+p {
+    color: #2b0057;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    line-height: 1.6;
+}
+
+strong {
+    color: #5e00a8;
+}
+
+.informacion-tienda {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.Mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.Mapa iframe {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-local__mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.info-local__mapa iframe {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
 }
 
 @media (min-width: 320px) and (max-width: 430px) {
