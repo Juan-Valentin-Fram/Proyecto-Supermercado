@@ -22,6 +22,8 @@ body {
     font-style: italic;
 }
 
+main {}
+
 h2 {
     color: rgb(69, 53, 114);
     font-size: 40px;
@@ -284,7 +286,7 @@ hr {
 }
 
 .contacto__campo {
-    width: 600px;
+    width: 80vw;
     height: 40px;
     background-color: rgb(209, 183, 204);
     color: rgb(30, 5, 36);
@@ -294,6 +296,45 @@ hr {
     font-family: inherit;
     font-style: italic;
     font-weight: bold;
+    justify-content: center;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #6a1b9a;
+    background-color: #f4e3ff;
+    box-shadow: 0 0 8px #c77dff;
+}
+
+.descripcion-tienda {
+    color: rgb(105, 69, 105);
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.acceso__titulo {
+    text-decoration: solid;
+}
+
+.acceso__formulario {
+    display: flex;
+    gap: 15px;
+    margin: 15px;
+}   
+
+.acceso__etiqueta {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(209, 183, 204);
+    font-style: italic;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    line-height: 40px;
+    background-color: rgb(46, 16, 73);
 }
 
 .contacto__acciones {
@@ -544,7 +585,6 @@ hr {
 /* El carrusel completo */
 #carouselExampleAutoplaying {
     width: 100%;
-    max-width: 1600px;
     margin: 0 auto;
     background-color: rgb(30, 5, 36);
     border-bottom: 2px solid rgb(78, 28, 68);
