@@ -332,11 +332,6 @@ textarea:required:valid {
     gap: 15px;
 }
 
-.acceso__formulario {
-    gap: 15px;
-    margin: 15px;
-}
-
 .acceso__etiqueta {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -379,7 +374,6 @@ textarea:required:valid {
 
 /* ====== CATÁLOGO / TARJETAS DE PRODUCTO ====== */
 
-/* Contenedor de cada categoría (Lácteos, Perfumería, etc.) */
 .listado-productos {
     margin: 2rem auto;
     width: 90%;
@@ -389,7 +383,6 @@ textarea:required:valid {
     gap: 1.5rem;
 }
 
-/* Título de la categoría */
 .listado-productos__categoria {
     text-transform: uppercase;
     font-size: 30px;
@@ -401,7 +394,6 @@ textarea:required:valid {
     border: 2px solid rgb(78, 28, 68);
 }
 
-/* Grilla que contiene varias tarjetas de producto */
 .listado-productos__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
@@ -411,9 +403,7 @@ textarea:required:valid {
 /* TARJETA del producto */
 .producto {
     background-color: rgb(30, 5, 36);
-    /* violeta oscuro */
     color: rgb(209, 183, 204);
-    /* texto lila claro */
     border: 2px solid black;
     border-radius: 4px;
     padding: 1.5rem;
@@ -424,7 +414,6 @@ textarea:required:valid {
     font-style: italic;
 }
 
-/* Nombre / título del producto */
 .producto__nombre {
     font-size: 20px;
     line-height: 1.4;
@@ -432,34 +421,28 @@ textarea:required:valid {
     color: rgb(209, 183, 204);
     margin: 0;
     padding: 0;
-    /* Importante: sacamos alto fijo */
 }
 
-/* Imagen del producto */
 .producto__imagen {
     width: 200px;
     height: 200px;
     object-fit: contain;
     align-self: center;
     background-color: #fff0;
-    /* transparente */
 }
 
-/* Precio */
 .producto__precio {
     font-size: 18px;
     color: rgb(209, 183, 204);
     margin: 0;
 }
 
-/* Label "Cantidad:" */
 .producto__etiqueta {
     font-size: 16px;
     color: rgb(209, 183, 204);
     font-weight: 500;
 }
 
-/* Input de cantidad */
 .producto__campo-cantidad {
     width: 60px;
     height: 32px;
@@ -473,7 +456,6 @@ textarea:required:valid {
     font-weight: bold;
 }
 
-/* Botón "Comprar" */
 .producto__boton-comprar {
     width: 110px;
     height: 40px;
@@ -500,6 +482,16 @@ textarea:required:valid {
     background-color: rgb(219, 215, 154);
 }
 
+.pie {
+    background-color: #d7c1e9;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
 /* ====== RECETAS ====== */
 .receta {
     width: 90%;
@@ -515,6 +507,10 @@ textarea:required:valid {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     color: rgb(30, 5, 36);
+    text-decoration: solid;
+    border: 2px solid #1a0028;
+    border-radius: 4px;
+    background-color: rgb(219, 215, 154);
 }
 
 .receta__tabla {
@@ -566,15 +562,8 @@ textarea:required:valid {
     background-color: rgb(30, 5, 36);
     border: 2px solid black;
     border-radius: 4px;
-    padding: 1rem;
+    padding: 2rem;
     color: rgb(209, 183, 204);
-}
-
-.receta__titulo2 {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    color: rgb(30, 5, 36);
 }
 
 .receta__imagen {
@@ -703,6 +692,166 @@ strong {
     height: 100%;
     border: none;
     display: block;
+}
+
+.boton-ingresar {
+    background-color: #714c88;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-ingresar:hover {
+    background-color: #360642;
+}
+
+.acceso {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.acceso__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.acceso__etiqueta .acceso__titulo {
+    font-style: italic;
+    color: #2e004f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.acceso__etiqueta {
+    font-weight: bold;
+    color: #2e004f;
+    background-color: #d7c1e9;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px solid #2e004f;
+}
+
+.acceso__usuario .acceso__contraseña {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto__boton {
+    background-color: #714c88;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.acceso__campo {
+    width: 59%;
+    padding: 8px;
+    border: 2px solid #2e004f;
+    border-radius: 5px;
+    background-color: #e8d4f5;
+    font-family: 'Georgia', serif;
+    height: 3.6rem;
+}
+
+.contacto__boton:hover {
+    background-color: #360642;
+}
+
+
+/* ===== FORMULARIO DE CONTACTO ===== */
+
+.contacto {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto__titulo {
+    font-style: italic;
+    color: #2e004f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto__nombre,
+.contacto__celular,
+.contacto__correo,
+.contacto__mensaje {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto__etiqueta {
+    font-weight: bold;
+    color: #2e004f;
+    background-color: #d7c1e9;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px solid #2e004f;
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #2e004f;
+    border-radius: 5px;
+    background-color: #e8d4f5;
+    font-family: 'Georgia', serif;
+}
+
+.contacto__campo--mensaje {
+    min-height: 90px;
+}
+
+.contacto__acciones {
+    gap: 15px;
+    margin-left: 130px;
+}
+
+.principal__introduccion {
+    font-style: italic;
+    color: #2e004f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.principal__subtitulo {
+    font-style: italic;
+    color: #2e004f;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 430px) {

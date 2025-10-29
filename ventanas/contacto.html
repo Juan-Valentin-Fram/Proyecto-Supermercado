@@ -62,17 +62,25 @@
             </h2>
 
             <form class="contacto__formulario">
-                <label class="contacto__etiqueta" for="nombre">Nombre:</label>
-                <input id="nombre" type="text" class="contacto__campo contacto__campo--texto" required>
+                <div class="contacto__nombre">
+                    <label class="contacto__etiqueta" for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" class="contacto__campo contacto__campo--texto" required>
+                </div>
 
-                <label class="contacto__etiqueta" for="celular">Celular:</label>
-                <input id="celular" type="tel" class="contacto__campo contacto__campo--tel" required>
+                <div class="contacto__celular">
+                    <label class="contacto__etiqueta" for="celular">Celular:</label>
+                    <input id="celular" type="tel" class="contacto__campo contacto__campo--tel" required>
+                </div>
 
-                <label class="contacto__etiqueta" for="correo">Email:</label>
-                <input id="correo" type="email" class="contacto__campo contacto__campo--email" required>
+                <div class="contacto__correo">
+                    <label class="contacto__etiqueta" for="correo">Email:</label>
+                    <input id="correo" type="email" class="contacto__campo contacto__campo--email" required>
+                </div>
 
-                <label class="contacto__etiqueta" for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" class="contacto__campo contacto__campo--mensaje" required></textarea>
+                <div class="contacto__mensaje">
+                    <label class="contacto__etiqueta" for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" class="contacto__campo contacto__campo--mensaje" required></textarea>
+                </div>
 
                 <div class="contacto__acciones">
                     <input type="submit" value="Enviar" class="contacto__boton contacto__boton--enviar">
