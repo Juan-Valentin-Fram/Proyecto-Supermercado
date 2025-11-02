@@ -22,8 +22,6 @@ body {
     font-style: italic;
 }
 
-main {}
-
 h2 {
     color: rgb(69, 53, 114);
     font-size: 40px;
@@ -763,7 +761,7 @@ strong {
 }
 
 .acceso__campo {
-    width: 59%;
+    width: 58%;
     padding: 8px;
     border: 2px solid #2e004f;
     border-radius: 5px;
