@@ -79,80 +79,83 @@
 
         &--encabezado {
             background-color: rgb(46, 16, 73);
-            color: rgb(209, 183, 204);
+            color: rgb(146, 113, 146);
             font-weight: bold;
-            border-bottom: 2px solid black;
+
+            .receta__columna {
+                color: inherit; // usa el color del encabezado
+            }
         }
     }
 
-    &__columna {
-        font-size: 1.1rem;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-        &--ingrediente {
-            font-weight: bold;
-            color: #3c0342;
-        }
-
-        &--cantidad {
-            text-align: center;
-            color: #3c0342;
-        }
-    }
-
-    &__preparacion {
-        margin-top: 1rem;
-        padding-left: 1.2rem;
-
-        .receta__pasos {
-            margin-bottom: .8rem;
+        &__columna {
             font-size: 1.1rem;
-            line-height: 1.6;
-            color: #3c0342;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            &--ingrediente {
+                font-weight: bold;
+                color: #3c0342;
+            }
+
+            &--cantidad {
+                text-align: center;
+                color: #3c0342;
+            }
+        }
+
+        &__preparacion {
+            margin-top: 1rem;
+            padding-left: 1.2rem;
+
+            .receta__pasos {
+                margin-bottom: .8rem;
+                font-size: 1.1rem;
+                line-height: 1.6;
+                color: #3c0342;
+            }
         }
     }
-}
 
-/* ===== BOTÓN WHATSAPP ===== */
+    /* ===== BOTÓN WHATSAPP ===== */
 
-.boton-whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1500;
+    .boton-whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1500;
 
-    &__icono {
-        width: 60px;
-        height: auto;
-        transition: transform .2s ease;
-
-        &:hover {
-            transform: scale(1.05);
-        }
-    }
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media (max-width: 768px) {
-    .receta {
-        padding: 1.5rem;
-
-        &__titulo {
-            font-size: 1.5rem;
-        }
-
-        &__tabla {
-            font-size: .95rem;
-        }
-
-        &__fila {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        &__imagen {
-            max-width: 100%;
+        &__icono {
+            width: 60px;
             height: auto;
+            transition: transform .2s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
-}
+
+    /* ===== RESPONSIVE ===== */
+
+    @media (max-width: 768px) {
+        .receta {
+            padding: 1.5rem;
+
+            &__titulo {
+                font-size: 1.5rem;
+            }
+
+            &__tabla {
+                font-size: .95rem;
+            }
+
+            &__fila {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            &__imagen {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
