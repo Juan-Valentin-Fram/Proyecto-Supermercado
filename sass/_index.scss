@@ -1,0 +1,122 @@
+// Contenido CSS y SASS del Inicio, con su responsive //
+@use "variables" as v;
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* ===== CARRUSEL ===== */
+.carousel {
+    width: 100%;
+    background-color: #350538;
+
+    .carousel-item img {
+        width: 100%;
+        object-fit: cover;
+        height: 30rem;
+        display: block;
+        object-fit: contain; // opcional: o podés directamente borrar esta línea
+    }
+}
+
+/* ===== ACCESO: formulario ===== */
+.acceso {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    margin-top: 2.5rem;
+
+
+    &__formulario {
+        width: 350px;
+        background-color: #f5e9ff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    &__titulo {
+        color: #360341;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__usuario,
+    &__contraseña {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    &__etiqueta {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &__campo {
+        padding: 8px;
+        border-radius: 6px;
+        border: 2px solid #9664b9;
+
+        &--clave {
+            letter-spacing: 2px;
+        }
+    }
+
+    .boton-ingresar {
+        margin-top: 1rem;
+        background-color: #350538;
+        color: #fff;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #4a0850;
+        }
+    }
+}
+
+/* ===== DESCRIPCIÓN ===== */
+.descripcion-tienda {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+
+    &__titulo {
+        color: #3c0342;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    &__parrafo {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+.boton-whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1500;
+
+    &__icono {
+        width: 55px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

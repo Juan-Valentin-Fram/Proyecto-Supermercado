@@ -1,0 +1,115 @@
+// Contenido CSS y SASS del footer, con su responsive //
+
+@use "variables" as v;
+
+.pie {
+    background-image: url(../assets/Imagen\ Fondo\ 2.png);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    .pie__superior {
+        .pie__legal {
+            font-size: 2rem;
+            text-align: center;
+            color: rgb(78, 28, 68);
+            text-decoration: solid;
+            background-color: rgb(219, 215, 154);
+        }
+    }
+
+    .redes {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 8rem;
+        justify-content: center;
+        padding: 0;
+        margin: 1.5rem 0;
+
+        .redes__item {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .redes__icono {
+            width: 40px;
+            max-width: 40px;
+            height: auto;
+            display: block;
+        }
+
+        .redes__link {
+            text-decoration: none;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(209, 183, 204);
+            font-style: italic;
+            font-weight: bold;
+            border: 2px solid black;
+            line-height: 40px;
+            background-color: rgb(46, 16, 73);
+            padding: 0 .75rem;
+            display: inline-block;
+        }
+    }
+
+    .pie__marca {
+        font-size: 1.8rem;
+        color: rgb(30, 5, 36);
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    @include v.mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pl"
+            "rs"
+            "pm";
+        row-gap: 1.5rem;
+        padding: 1.5rem 1rem 2.5rem 1rem;
+        box-sizing: border-box;
+        justify-items: center;
+        text-align: center;
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+
+        .pie__legal {
+            grid-area: pl;
+            max-width: 90%;
+            font-size: 1rem;
+            line-height: 1.4;
+            background-color: rgb(219, 215, 154);
+            border: 2px solid rgb(78, 28, 68);
+            padding: 1rem;
+            margin: auto;
+        }
+
+        .redes {
+            grid-area: rs;
+            display: grid;
+            justify-items: center;
+            row-gap: 1rem;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .redes__item {
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .pie__marca {
+            grid-area: pm;
+        }
+    }
+}

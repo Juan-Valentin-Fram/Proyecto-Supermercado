@@ -1,0 +1,81 @@
+// Estilos de la ventana "Información de nosotros"
+
+@use "variables" as v;
+
+/* ===== CONTENIDO PRINCIPAL INFORMACIÓN ===== */
+
+.informacion-tienda {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2.5rem auto 3rem auto;
+    text-align: center;
+
+    &__titulo {
+        font-size: 2rem;
+        color: #3c0342;
+        margin-bottom: 1.5rem;
+    }
+
+    &__parrafo {
+        font-size: 1.15rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+}
+
+/* ===== MAPA ===== */
+
+.Mapa {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    justify-content: center;
+
+    &__enlace {
+        width: 100%;
+        max-width: 600px;
+        height: 350px;
+        border: 2px solid #3c0342;
+        border-radius: 10px;
+    }
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+
+.boton-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1500;
+
+    &__icono {
+        width: 60px;
+        height: auto;
+        transition: transform .2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .informacion-tienda {
+        &__titulo {
+            font-size: 1.6rem;
+        }
+
+        &__parrafo {
+            font-size: 1.05rem;
+        }
+    }
+
+    .Mapa__enlace {
+        max-width: 100%;
+        height: 260px;
+    }
+}

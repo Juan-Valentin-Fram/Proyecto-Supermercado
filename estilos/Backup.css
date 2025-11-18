@@ -1,0 +1,992 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: rgb(105, 69, 105);
+    font-size: 25px;
+}
+
+h1 {
+    color: rgb(69, 53, 114);
+    font-size: 60px;
+    text-align: center;
+}
+
+body {
+    background-image: url(../assets/Imagen\ Fondo.png);
+    background-color: rgb(192, 171, 192);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+h2 {
+    color: rgb(69, 53, 114);
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(30, 6, 53);
+    font-size: 25px;
+}
+
+h4 {
+    color: rgb(69, 53, 114);
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+header {
+    display: flex;
+    background-color: rgb(21, 2, 39);
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
+}
+
+footer {
+    background-image: url(../assets/Imagen\ Fondo\ 2.png);
+    font-size: 40px;
+    text-align: center;
+}
+
+.encabezado__titulo {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(209, 183, 204);
+}
+
+#Descripción {
+    color: rgb(105, 69, 105);
+    font-size: 25px;
+}
+
+/* Estilos para las redes sociales */
+.redes__link {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(209, 183, 204);
+    font-style: italic;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    line-height: 40px;
+    background-color: rgb(46, 16, 73);
+}
+
+.redes__icono {
+    width: 40px;
+    height: auto;
+}
+
+.redes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+}
+
+.producto__boton-comprar {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(209, 183, 204);
+    color: rgb(30, 5, 36);
+}
+
+.producto__campo-cantidad {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(209, 183, 204);
+    color: rgb(30, 5, 36);
+}
+
+.contenedor2 {
+    display: flex;
+    overflow-x: auto;
+    flex-flow: row wrap;
+    margin: 15px;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.contenedor3 {
+    display: flex;
+    overflow-x: auto;
+    flex-flow: row wrap;
+    margin: 15px;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.contenedor4 {
+    display: flex;
+    overflow-x: auto;
+    flex-flow: row wrap;
+    margin: 15px;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.listado-productos__categoria {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-decoration: solid;
+    background-color: rgb(219, 215, 154);
+    color: rgb(78, 28, 68);
+}
+
+.navegacion-principal {
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(209, 183, 204);
+    font-style: italic;
+    font-weight: bold;
+    list-style: none;
+    gap: 15px;
+    justify-content: space-around !important;
+    width: 100%;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* Para configurar el header */
+
+header {
+    background-color: #1a0028;
+    color: #f5e1ff;
+}
+
+.encabezado {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    /* clave */
+}
+
+.navegacion-principal .container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.encabezado__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 60px;
+    align-items: center;
+}
+
+.encabezado__logo {
+    height: 5rem;
+    width: auto;
+    transform: scale(1.8);
+    transform-origin: left center;
+}
+
+.navegacion-principal__lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navegacion-principal__enlace {
+    text-decoration: none;
+    color: #b58bd2;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navegacion-principal__enlace:hover {
+    color: #fff;
+    /* cambia al pasar el mouse */
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: none;
+    color: rgb(219, 215, 154);
+}
+
+.navbar-toggler {
+    border-color: rgb(209, 183, 204);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28209, 183, 204, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #4B007D, #EBDCF6);
+    margin: 20px 0;
+}
+
+/* Botón de WhatsApp fijo en la esquina inferior derecha */
+.boton-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    gap: 15px;
+}
+
+.boton-whatsapp__icono {
+    width: 60px;
+    height: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.info-local__dato {
+    text-decoration: solid;
+    background-color: rgb(219, 215, 154);
+    color: rgb(78, 28, 68);
+}
+
+.contacto__formulario {
+    display: grid;
+    grid-column: auto;
+    gap: 15px;
+}
+
+.contacto__etiqueta {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(209, 183, 204);
+    font-style: italic;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    line-height: 40px;
+    background-color: rgb(46, 16, 73);
+}
+
+.contacto__campo {
+    width: 80vw;
+    height: 40px;
+    background-color: rgb(209, 183, 204);
+    color: rgb(30, 5, 36);
+    border: 2px solid black;
+    padding: 2px 4px;
+    font-size: 16px;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+    justify-content: center;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #6a1b9a;
+    background-color: #f4e3ff;
+    box-shadow: 0 0 8px #c77dff;
+}
+
+input:required:valid,
+textarea:required:valid {
+    border: 2px solid green;
+}
+
+.descripcion-tienda {
+    color: rgb(105, 69, 105);
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.acceso__titulo {
+    text-decoration: solid;
+}
+
+.acceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.acceso__etiqueta {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(209, 183, 204);
+    font-style: italic;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    line-height: 40px;
+    background-color: rgb(46, 16, 73);
+}
+
+.contacto__acciones {
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.tabla {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(209, 183, 204);
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid black;
+    line-height: 40px;
+    background-color: rgb(46, 16, 73);
+}
+
+.carritotabla {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+
+/* ====== CATÁLOGO / TARJETAS DE PRODUCTO ====== */
+
+.listado-productos {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.listado-productos__categoria {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+    background-color: rgb(219, 215, 154);
+    color: rgb(78, 28, 68);
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(78, 28, 68);
+}
+
+.listado-productos__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 2rem;
+}
+
+/* TARJETA del producto */
+.producto {
+    background-color: rgb(30, 5, 36);
+    color: rgb(209, 183, 204);
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+}
+
+.producto__nombre {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(209, 183, 204);
+    margin: 0;
+    padding: 0;
+}
+
+.producto__imagen {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    align-self: center;
+    background-color: #fff0;
+}
+
+.producto__precio {
+    font-size: 18px;
+    color: rgb(209, 183, 204);
+    margin: 0;
+}
+
+.producto__etiqueta {
+    font-size: 16px;
+    color: rgb(209, 183, 204);
+    font-weight: 500;
+}
+
+.producto__campo-cantidad {
+    width: 60px;
+    height: 32px;
+    background-color: rgb(209, 183, 204);
+    color: rgb(30, 5, 36);
+    border: 2px solid black;
+    padding: 2px 4px;
+    font-size: 16px;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.producto__boton-comprar {
+    width: 110px;
+    height: 40px;
+    background-color: rgb(209, 183, 204);
+    color: rgb(30, 5, 36);
+    border: 2px solid black;
+    font-size: 16px;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.producto__boton-comprar:hover {
+    filter: brightness(1.05);
+}
+
+.pie__legal {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(78, 28, 68);
+    text-decoration: solid;
+    background-color: rgb(219, 215, 154);
+}
+
+.pie {
+    background-color: #d7c1e9;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* ====== RECETAS ====== */
+.receta {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    color: rgb(30, 5, 36);
+}
+
+.receta__titulo {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: rgb(30, 5, 36);
+    text-decoration: solid;
+    border: 2px solid #1a0028;
+    border-radius: 4px;
+    background-color: rgb(219, 215, 154);
+}
+
+.receta__tabla {
+    display: grid;
+    row-gap: 0.5rem;
+    background-color: rgb(30, 5, 36);
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    color: rgb(209, 183, 204);
+}
+
+.receta__fila {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;
+    align-items: start;
+}
+
+.receta__fila--encabezado {
+    font-weight: bold;
+    color: rgb(30, 5, 36);
+    background-color: rgb(219, 215, 154);
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: .5rem .75rem;
+    margin-bottom: .75rem;
+}
+
+.receta__fila--encabezado .receta__columna {
+    color: rgb(30, 5, 36);
+}
+
+.receta__columna {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.receta__columna--cantidad {
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 600;
+    color: rgb(209, 183, 204);
+}
+
+.receta__preparacion {
+    display: grid;
+    row-gap: 0.5rem;
+    background-color: rgb(30, 5, 36);
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 2rem;
+    color: rgb(209, 183, 204);
+}
+
+.receta__imagen {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+/* ===== CARRUSEL ===== */
+
+/* El carrusel completo */
+#carouselExampleAutoplaying {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(30, 5, 36);
+    border-bottom: 2px solid rgb(78, 28, 68);
+}
+
+/* Cada slide */
+#carouselExampleAutoplaying .carousel-item {
+    max-height: 260px;
+    overflow: hidden;
+    background-color: rgb(30, 5, 36);
+}
+
+/* Las imágenes del carrusel */
+#carouselExampleAutoplaying .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 55vh;
+    object-fit: contain;
+    background-color: rgb(30, 5, 36);
+}
+
+/* Flechas del carrusel con tu estética */
+#carouselExampleAutoplaying .carousel-control-prev-icon,
+#carouselExampleAutoplaying .carousel-control-next-icon {
+    filter: invert(84%) sepia(11%) saturate(300%) hue-rotate(245deg) brightness(98%) contrast(90%);
+}
+
+#carouselExampleAutoplaying .carousel-control-prev,
+#carouselExampleAutoplaying .carousel-control-next {
+    width: 3rem;
+    opacity: 0.9;
+}
+
+#carouselExampleAutoplaying .carousel-control-prev:hover,
+#carouselExampleAutoplaying .carousel-control-next:hover {
+    opacity: 1;
+}
+
+#carouselExampleAutoplaying .carousel-item {
+    max-height: none;
+}
+
+body {
+    background-color: #e8d4f7;
+}
+
+p {
+    color: #2b0057;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    line-height: 1.6;
+}
+
+strong {
+    color: #5e00a8;
+}
+
+.informacion-tienda {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.Mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.Mapa iframe {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-local__mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.info-local__mapa iframe {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.boton-ingresar {
+    background-color: #714c88;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-ingresar:hover {
+    background-color: #360642;
+}
+
+.acceso {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.acceso__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.acceso__etiqueta .acceso__titulo {
+    font-style: italic;
+    color: #2e004f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.acceso__etiqueta {
+    font-weight: bold;
+    color: #2e004f;
+    background-color: #d7c1e9;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px solid #2e004f;
+}
+
+.acceso__usuario .acceso__contraseña {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto__boton {
+    background-color: #714c88;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.acceso__campo {
+    width: 45%;
+    padding: 8px;
+    border: 2px solid #2e004f;
+    border-radius: 5px;
+    background-color: #e8d4f5;
+    font-family: 'Georgia', serif;
+    height: 3.6rem;
+}
+
+.contacto__boton:hover {
+    background-color: #360642;
+}
+
+
+/* ===== FORMULARIO DE CONTACTO ===== */
+
+.contacto {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto__titulo {
+    font-style: italic;
+    color: #2e004f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto__nombre,
+.contacto__celular,
+.contacto__correo,
+.contacto__mensaje {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto__etiqueta {
+    font-weight: bold;
+    color: #2e004f;
+    background-color: #d7c1e9;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px solid #2e004f;
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #2e004f;
+    border-radius: 5px;
+    background-color: #e8d4f5;
+    font-family: 'Georgia', serif;
+}
+
+.contacto__campo--mensaje {
+    min-height: 90px;
+}
+
+.contacto__acciones {
+    gap: 15px;
+    margin-left: 130px;
+}
+
+.principal__introduccion {
+    font-style: italic;
+    color: #2e004f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.principal__subtitulo {
+    font-style: italic;
+    color: #2e004f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pl"
+            "rs"
+            "pm";
+        row-gap: 1.5rem;
+
+        padding: 1.5rem 1rem 2.5rem 1rem;
+        box-sizing: border-box;
+        justify-items: center;
+        text-align: center;
+
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    .pie__legal {
+        grid-area: pl;
+        max-width: 90%;
+        background-color: rgb(219, 215, 154);
+        border: 2px solid rgb(78, 28, 68);
+        padding: 1rem;
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .redes {
+        grid-area: rs;
+        display: grid;
+        justify-items: center;
+        row-gap: 1rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .redes__item {
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .pie__marca {
+        grid-area: pm;
+        font-size: 1.8rem;
+        color: rgb(30, 5, 36);
+        text-align: center;
+    }
+
+    .receta__fila {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .receta__columna--cantidad {
+        text-align: left;
+        white-space: normal;
+        font-weight: 600;
+        margin-top: .25rem;
+    }
+
+    .receta__fila--encabezado {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #carouselExampleAutoplaying .carousel-item {
+        max-height: 260px;
+    }
+}
+
+@media (min-width: 431) and (max-width:768) {
+    footer {
+        width: 100%;
+    }
+
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pl"
+            "rs"
+            "pm";
+        row-gap: 1.5rem;
+
+        padding: 1.5rem 1rem 2.5rem 1rem;
+        box-sizing: border-box;
+        justify-items: center;
+        text-align: center;
+
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    .pie__legal {
+        grid-area: pl;
+        max-width: 90%;
+        background-color: rgb(219, 215, 154);
+        border: 2px solid rgb(78, 28, 68);
+        padding: 1rem;
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .redes {
+        grid-area: rs;
+        display: grid;
+        justify-items: center;
+        row-gap: 1rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .redes__item {
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .pie__marca {
+        grid-area: pm;
+        font-size: 1.8rem;
+        color: rgb(30, 5, 36);
+        text-align: center;
+    }
+
+    #carouselExampleAutoplaying .carousel-item {
+        max-height: 260px;
+    }
+}

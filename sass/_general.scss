@@ -1,0 +1,55 @@
+/* ===== BODY ===== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+strong {
+    color: #5e00a8;
+}
+
+p {
+    color: rgb(58, 45, 58);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(69, 53, 114);
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(69, 53, 114);
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(30, 6, 53);
+    font-size: 25px;
+}
+
+h4 {
+    color: rgb(69, 53, 114);
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    background-color: #d7c1e9;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/Imagen\ Fondo.png);
+    background-color: rgb(192, 171, 192);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}

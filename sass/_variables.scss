@@ -1,0 +1,20 @@
+// Variables // 
+
+$fuente: italic;
+$color-principal: rgb(30, 5, 36);
+$color-secundario: rgb(209, 183, 204);
+$color-terciario: rgb(219, 215, 154);
+
+// EXTENDS Y MIXINS //
+
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: 430px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 431px) and (max-width: 768px) {
+        @content;
+    }
+}

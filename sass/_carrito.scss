@@ -1,0 +1,94 @@
+// Contenido CSS y SASS de carrito, con su responsive //
+
+@use "variables" as v;
+
+/* ===== TABLA DEL CARRITO ===== */
+
+.carritotabla {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+}
+
+.tabla {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(209, 183, 204);
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid black;
+    line-height: 40px;
+    background-color: rgb(46, 16, 73);
+    padding: 0 1rem;
+}
+
+/* ===== FILAS VACÍAS / DETALLE DE PRODUCTOS ===== */
+
+.carritotabla2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.tabla2 {
+    border: 2px solid rgb(46, 16, 73);
+    min-height: 40px;
+    background-color: #f5e9ff;
+}
+
+/* ===== SECCIÓN "PRODUCTOS EN EL CARRITO" ===== */
+
+.compras {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto 1rem auto;
+    text-align: left;
+
+    &__titulo {
+        font-size: 1.8rem;
+        color: #3c0342;
+        margin-bottom: .5rem;
+    }
+
+    &__parrafo {
+        font-size: 1rem;
+        color: #3c0342;
+    }
+}
+
+/* ===== FORMULARIO DE ENVÍOS (estructura básica, para completar luego) ===== */
+
+.envios {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+
+    &__formulario {
+        background-color: #f5e9ff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+}
+
+/* ===== RESPONSIVE SIMPLE ===== */
+
+@media (max-width: 768px) {
+
+    .carritotabla,
+    .carritotabla2 {
+        width: 95%;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .tabla {
+        font-size: 16px;
+    }
+}

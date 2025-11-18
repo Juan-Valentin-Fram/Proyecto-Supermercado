@@ -1,0 +1,158 @@
+// Estilos de la ventana de Recetas //
+
+@use "variables" as v;
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+
+.principal {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    &__introduccion {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: #3c0342;
+        font-weight: bold;
+    }
+
+    &__subtitulo {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+        color: #3c0342;
+    }
+
+    &__parrafo {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* ===== RECETA ===== */
+
+.receta {
+    width: 90%;
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    background-color: #f5e9ff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+
+    &__titulo {
+        font-size: 1.8rem;
+        color: #3c0342;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        &2 {
+            margin-top: 2rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__imagen {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 10px;
+        display: flex;
+        margin: 1.5rem auto;
+        border: 2px solid #3c0342;
+    }
+
+    &__tabla {
+        width: 100%;
+        margin: 1.5rem 0;
+        border: 2px solid #3c0342;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__fila {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 0.8rem 1rem;
+        background-color: #fdf8ff;
+        border-bottom: 1px solid #c9a3d8;
+
+        &--encabezado {
+            background-color: rgb(46, 16, 73);
+            color: rgb(209, 183, 204);
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+    }
+
+    &__columna {
+        font-size: 1.1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        &--ingrediente {
+            font-weight: bold;
+            color: #3c0342;
+        }
+
+        &--cantidad {
+            text-align: center;
+            color: #3c0342;
+        }
+    }
+
+    &__preparacion {
+        margin-top: 1rem;
+        padding-left: 1.2rem;
+
+        .receta__pasos {
+            margin-bottom: .8rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #3c0342;
+        }
+    }
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+
+.boton-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1500;
+
+    &__icono {
+        width: 60px;
+        height: auto;
+        transition: transform .2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .receta {
+        padding: 1.5rem;
+
+        &__titulo {
+            font-size: 1.5rem;
+        }
+
+        &__tabla {
+            font-size: .95rem;
+        }
+
+        &__fila {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__imagen {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
